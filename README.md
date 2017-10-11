@@ -1,5 +1,6 @@
-Prison Labor Dodgers
-====================
+# Stage 1
+
+## 1. Prison Labor Dodgers
 
 Commander Lambda is all about efficiency, including using her bunny prisoners for manual labor. But no one's been properly monitoring the labor shifts for a while, and they've gotten quite mixed up. You've been given the task of fixing them, but after you wrote up new shifts, you realized that some prisoners had been transferred to a different block and aren't available for their assigned shifts. And manually sorting through each shift list to compare against prisoner block lists will take forever - remember, Commander Lambda loves efficiency!
 
@@ -9,14 +10,12 @@ For example, given the lists x = [13, 5, 6, 2, 5] and y = [5, 2, 5, 13], the fun
 
 In each test case, the lists x and y will always contain n non-unique integers where n is at least 1 but never more than 99, and one of the lists will contain an additional unique integer which should be returned by the function.  The same n non-unique integers will be present on both lists, but they might appear in a different order, like in the examples above. Commander Lambda likes to keep her numbers short, so every prisoner ID will be between -1000 and 1000.
 
-Languages
-=========
+### Languages
 
 To provide a Python solution, edit solution.py
 To provide a Java solution, edit solution.java
 
-Test cases
-==========
+### Test cases
 
 Inputs:
     (int list) x = [13, 5, 6, 2, 5]
@@ -30,8 +29,9 @@ Inputs:
 Output:
     (int) -4
 
-Elevator Maintenance
-====================
+# Stage 2
+
+## 1. Elevator Maintenance
 
 You've been assigned the onerous task of elevator maintenance - ugh! It wouldn't be so bad, except that all the elevator documentation has been lying in a disorganized pile at the bottom of a filing cabinet for years, and you don't even know what elevator version numbers you'll be working on. 
 
@@ -41,14 +41,12 @@ Given a list of elevator versions represented as strings, write a function answe
 
 For example, given the list l as ["1.1.2", "1.0", "1.3.3", "1.0.12", "1.0.2"], the function answer(l) would return the list ["1.0", "1.0.2", "1.0.12", "1.1.2", "1.3.3"]. If two or more versions are equivalent but one version contains more numbers than the others, then these versions must be sorted ascending based on how many numbers they have, e.g ["1", "1.0", "1.0.0"]. The number of elements in the list l will be at least 1 and will not exceed 100.
 
-Languages
-=========
+### Languages
 
 To provide a Python solution, edit solution.py
 To provide a Java solution, edit solution.java
 
-Test cases
-==========
+### Test cases
 
 Inputs:
     (string list) l = ["1.1.2", "1.0", "1.3.3", "1.0.12", "1.0.2"]
@@ -60,8 +58,7 @@ Inputs:
 Output:
     (string list) ["0.1", "1.1.1", "1.2", "1.2.1", "1.11", "2", "2.0", "2.0.0"]
 
-Bunny Prisoner Locating
-=======================
+## 2. Bunny Prisoner Locating
 
 Keeping track of Commander Lambda's many bunny prisoners is starting to get tricky. You've been tasked with writing a program to match bunny prisoner IDs to cell locations.
 
@@ -78,14 +75,12 @@ For example, the bunny prisoner at (1, 1) has ID 1, the bunny prisoner at (3, 2)
 
 Write a function answer(x, y) which returns the prisoner ID of the bunny at location (x, y). Each value of x and y will be at least 1 and no greater than 100,000. Since the prisoner ID can be very large, return your answer as a string representation of the number.
 
-Languages
-=========
+### Languages
 
 To provide a Python solution, edit solution.py
 To provide a Java solution, edit solution.java
 
-Test cases
-==========
+### Test cases
 
 Inputs:
     (int) x = 3
@@ -99,8 +94,9 @@ Inputs:
 Output:
     (string) "96"
 
-Doomsday Fuel
-=============
+# Stage 3
+
+## 1. Doomsday Fuel
 
 Making fuel for the LAMBCHOP's reactor core is a tricky process because of the exotic matter involved. It starts as raw ore, then during processing, begins randomly changing between forms, eventually reaching a stable form. There may be multiple stable forms that a sample could ultimately reach, not all of which are useful as fuel. 
 
@@ -130,14 +126,12 @@ So, putting that together, and making a common denominator, gives an answer in t
 [s2.numerator, s3.numerator, s4.numerator, s5.numerator, denominator] which is
 [0, 3, 2, 9, 14].
 
-Languages
-=========
+### Languages
 
 To provide a Python solution, edit solution.py
 To provide a Java solution, edit solution.java
 
-Test cases
-==========
+### Test cases
 
 Inputs:
     (int) m = [[0, 2, 1, 0, 0], [0, 0, 0, 3, 4], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
@@ -149,8 +143,7 @@ Inputs:
 Output:
     (int list) [0, 3, 2, 9, 14]
 
-Fuel Injection Perfection
-=========================
+## 2. Fuel Injection Perfection
 
 Commander Lambda has asked for your help to refine the automatic quantum antimatter fuel injection system for her LAMBCHOP doomsday device. It's a great chance for you to get a closer look at the LAMBCHOP - and maybe sneak in a bit of sabotage while you're at it - so you took the job gladly. 
 
@@ -169,14 +162,12 @@ answer(4) returns 2: 4 -> 2 -> 1
 answer(15) returns 5: 15 -> 16 -> 8 -> 4 -> 2 -> 1
 
 
-Languages
-=========
+### Languages
 
 To provide a Python solution, edit solution.py
 To provide a Java solution, edit solution.java
 
-Test cases
-==========
+### Test cases
 
 Inputs:
     (string) n = "4"
@@ -188,8 +179,7 @@ Inputs:
 Output:
     (int) 5
 
-Prepare the Bunnies' Escape
-===========================
+## 3. Prepare the Bunnies' Escape
 
 You're awfully close to destroying the LAMBCHOP doomsday device and freeing Commander Lambda's bunny prisoners, but once they're free of the prison blocks, the bunnies are going to need to escape Lambda's space station via the escape pods as quickly as possible. Unfortunately, the halls of the space station are a maze of corridors and dead ends that will be a deathtrap for the escaping bunnies. Fortunately, Commander Lambda has put you in charge of a remodeling project that will give you the opportunity to make things a little easier for the bunnies. Unfortunately (again), you can't just remove all obstacles between the bunnies and the escape pods - at most you can remove one wall per escape pod path, both to maintain structural integrity of the station and to avoid arousing Commander Lambda's suspicions. 
 
@@ -197,42 +187,12 @@ You have maps of parts of the space station, each starting at a prison exit and 
 
 Write a function answer(map) that generates the length of the shortest path from the prison door to the escape pod, where you are allowed to remove one wall as part of your remodeling plans. The path length is the total number of nodes you pass through, counting both the entrance and exit nodes. The starting and ending positions are always passable (0). The map will always be solvable, though you may or may not need to remove a wall. The height and width of the map can be from 2 to 20. Moves can only be made in cardinal directions; no diagonal moves are allowed.
 
-Languages
-=========
+### Languages
 
 To provide a Python solution, edit solution.py
 To provide a Java solution, edit solution.java
 
-Test cases
-==========
-
-Inputs:
-    (int) maze = [[0, 1, 1, 0], [0, 0, 0, 1], [1, 1, 0, 0], [1, 1, 1, 0]]
-Output:
-    (int) 7
-
-Inputs:
-    (int) maze = [[0, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 1], [0, 1, 1, 1, 1, 1], [0, 0, 0, 0, 0, 0]]
-Output:
-    (int) 11
-
-Prepare the Bunnies' Escape
-===========================
-
-You're awfully close to destroying the LAMBCHOP doomsday device and freeing Commander Lambda's bunny prisoners, but once they're free of the prison blocks, the bunnies are going to need to escape Lambda's space station via the escape pods as quickly as possible. Unfortunately, the halls of the space station are a maze of corridors and dead ends that will be a deathtrap for the escaping bunnies. Fortunately, Commander Lambda has put you in charge of a remodeling project that will give you the opportunity to make things a little easier for the bunnies. Unfortunately (again), you can't just remove all obstacles between the bunnies and the escape pods - at most you can remove one wall per escape pod path, both to maintain structural integrity of the station and to avoid arousing Commander Lambda's suspicions. 
-
-You have maps of parts of the space station, each starting at a prison exit and ending at the door to an escape pod. The map is represented as a matrix of 0s and 1s, where 0s are passable space and 1s are impassable walls. The door out of the prison is at the top left (0,0) and the door into an escape pod is at the bottom right (w-1,h-1). 
-
-Write a function answer(map) that generates the length of the shortest path from the prison door to the escape pod, where you are allowed to remove one wall as part of your remodeling plans. The path length is the total number of nodes you pass through, counting both the entrance and exit nodes. The starting and ending positions are always passable (0). The map will always be solvable, though you may or may not need to remove a wall. The height and width of the map can be from 2 to 20. Moves can only be made in cardinal directions; no diagonal moves are allowed.
-
-Languages
-=========
-
-To provide a Python solution, edit solution.py
-To provide a Java solution, edit solution.java
-
-Test cases
-==========
+### Test cases
 
 Inputs:
     (int) maze = [[0, 1, 1, 0], [0, 0, 0, 1], [1, 1, 0, 0], [1, 1, 1, 0]]
